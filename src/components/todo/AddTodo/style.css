@@ -1,0 +1,27 @@
+.form-style {
+    display: flex;
+}
+
+.input-style {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 6px 0;
+    background: #eae7dc;
+    color: #8e8d8a;
+    border: 0;
+    padding: 20px;
+}
+
+.form_btn-style {
+    display: block;
+	border: 0;
+	background: #e85a4f;
+	color: black;
+	padding: 7px 20px;
+	cursor: pointer;
+    margin: 10px auto;
+}
+
+.form_btn-style:hover {
+	background: #e98074;
+}

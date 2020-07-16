@@ -1,0 +1,28 @@
+.item-style {
+    background-color: #d8c3a5;
+    color: #e85a4f;
+    padding: 10px;
+    border-bottom: 1px #e85a4f solid;
+}
+
+.item-style input {
+    margin-right: 10px;
+}
+
+.btn-style {
+    background: #e85a4f;
+    color: #8e8d8a;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.item-date {
+    margin-left: 25px;
+    font-size: 15px;
+    opacity: 0.7;
+
+}

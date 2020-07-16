@@ -1,0 +1,14 @@
+.header-style {
+	background: #8e8d8a;
+	color: #e98074;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.header-style h1 {
+	margin: 10px 0;
+}
+
+.header-style p {
+	margin: 10px 0;
+}

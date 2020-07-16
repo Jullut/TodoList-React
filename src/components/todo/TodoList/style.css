@@ -1,0 +1,7 @@
+.list-empty {
+    background-color: #d8c3a5;
+    color: #e85a4f;
+    padding: 10px;
+    border-bottom: 1px #e85a4f solid;
+    text-align: center;
+}
