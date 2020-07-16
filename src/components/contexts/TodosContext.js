@@ -1,4 +1,4 @@
-import React, { useContext, useState, createContext } from 'react';
+import React, { useContext, useState, createContext, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
 
 export const TodosContext = createContext();
@@ -8,22 +8,29 @@ const TodosContextProvider = (props) => {
 		{
 			id: uuid(),
 			title: 'Take out the trash',
-            date: '2020-07-15',
+			date: '2020-07-15',
 			completed: false
 		},
 		{
 			id: uuid(),
 			title: 'Feed the dog',
-            date: '2020-07-15',
+			date: '2020-07-15',
 			completed: false
 		},
 		{
 			id: uuid(),
 			title: 'Dinner with friends',
-            date: '2020-07-15',
+			date: '2020-07-15',
 			completed: false
 		}
 	]);
+
+	useEffect(
+		() => {
+			localStorage.setItem('todos', JSON.stringify(todos));
+		},
+		[ todos ]
+	);
 
 	const addTodo = (title, date) => {
 		setTodos([
@@ -31,7 +38,7 @@ const TodosContextProvider = (props) => {
 			{
 				id: uuid(),
 				title,
-                date,
+				date,
 				completed: false
 			}
 		]);
@@ -52,8 +59,12 @@ const TodosContextProvider = (props) => {
 		);
 	};
 
+	const filterDate = (date) => {
+		setTodos(todos.filter((todo) => todo.date === date));
+	};
+
 	return (
-		<TodosContext.Provider value={{ todos, addTodo, delTodo, markComplete }}>
+		<TodosContext.Provider value={{ todos, addTodo, delTodo, markComplete, filterDate }}>
 			{props.children}
 		</TodosContext.Provider>
 	);

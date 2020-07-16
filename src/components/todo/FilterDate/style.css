@@ -1,0 +1,28 @@
+.input-style-filter {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 6px 0;
+	background: #eae7dc;
+	color: #8e8d8a;
+	border: 0;
+	padding: 20px;
+}
+
+.form_btn-style-filter {
+	display: block;
+	border: 0;
+	background: #e85a4f;
+	color: black;
+	padding: 20px 50px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+.form_btn-style-filter:hover {
+	background: #e98074;
+}
+
+.form-style-filter {
+	display: flex;
+	flex-direction: column;
+}

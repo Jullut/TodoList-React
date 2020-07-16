@@ -1,0 +1,10 @@
+.sidebar-style {
+	background: #8e8d8a;
+	color: #e98074;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.sidebar-style h1 {
+	margin: 10px 0;
+}
