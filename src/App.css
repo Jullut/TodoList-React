@@ -8,8 +8,19 @@ a {
 	text-decoration: none;
 }
 
-.container {
-	padding: 5em 30em;
+.main-container {
+	width: 45%;
 }
 
+.App {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	margin-top: 5%;
+}
 
+.sidebar-container {
+	border: 2px #e98074 solid;
+	background: #8e8d8a;
+	width: 20%;
+}
